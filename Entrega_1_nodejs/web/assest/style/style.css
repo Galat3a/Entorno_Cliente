@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+#consulta {
+    background-color: #eddede;
+    width: 15rem;
+    padding: 20px;
+
+}
+
+
+
+#dato {
+    margin-top: 10px;
+    color: #272525;
+}
+
+.l{
+    text-transform: uppercase;
+    color: rgb(227, 18, 88);
+}
