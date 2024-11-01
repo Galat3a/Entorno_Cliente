@@ -1,4 +1,4 @@
-# README - Aplicación de Gestión de Notas. Práctica 1. DOM y REST-API
+# README - Práctica 1. DOM y REST-API. Aplicación de Gestión de Notas.
 
 ## Descripción
 
