@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Notas</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Agrega aquí tu CSS si lo tienes -->
+</head>
+<body>
+    <div>
+        <h1>Notas</h1>
+        <form id="formNuevaNota">
+            <label for="tipoNota">Tipo de Nota:</label>
+            <select id="tipoNota">
+                <option value="normal">Normal</option>
+                <option value="critica">Crítica</option>
+            </select>
+            <label for="contenidoNota">Contenido:</label>
+            <textarea id="contenidoNota" placeholder="Escribe tu nota aquí" required></textarea>
+            <button type="submit">Agregar Nota</button>
+        </form>
+        <label for="filtroMes">Filtrar por Mes:</label>
+        <select id="filtroMes">
+            <option value="">Todos</option>
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+        <section id="notaLista"></section>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
