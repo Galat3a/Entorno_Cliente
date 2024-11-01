@@ -31,3 +31,4 @@ document.getElementById('formNuevaNota').addEventListener('submit', async (event
     }, error => console.error(error));
 });
 
+console.log("hola hola");
