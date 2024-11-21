@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrastrar y Soltar</title>
+  <style>
+    /* Estilo global */
+    /* Estilo global */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Estilo para los contenedores */
+    .contenedor1,
+    .contenedor2,  .contenedor3, .contenedor4  {
+      width: 300px;
+      height: 400px;
+      border: 2px dotted #ccc;
+      /* Borde punteado de color gris claro */
+      background-color: #ffffff;
+      /* Fondo blanco para el contenedor */
+      padding: 10px;
+      position: relative;
+      overflow: hidden;
+      /* Evitar que los elementos se salgan del contenedor */
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    /* Cambio de color del borde cuando el contenedor es arrastrado sobre */
+    .contenedor1:hover,
+    .contenedor2:hover {
+      border-color: #007bff;
+      /* Borde azul cuando se pasa el ratón sobre el contenedor */
+    }
+
+    /* Estilo para los elementos */
+    .elemento {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px;
+      text-align: center;
+      line-height: 100px;
+      border-radius: 10px;
+      cursor: move;
+      position: absolute;
+      transition: transform 0.2s ease;
+    }
+
+    /* Ajustar la apariencia de los elementos cuando están siendo arrastrados */
+    .elemento:active {
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <h2>OROS</h2>
+  <div class="contenedor1" id="contenedor1"></div>
+  <h2>ESPADAS</h2>
+  <div class="contenedor2" id="contenedor2"></div>
+  <h2>BASTOS</h2>
+  <div class="contenedor3" id="contenedor3"></div>
+  <h2>COPAS</h2>
+  <div class="contenedor4" id="contenedor4"></div>
+
+  <script type="module" src="js/index.js"></script>
+
+</body>
+
+</html>
